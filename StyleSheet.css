@@ -1,0 +1,197 @@
+/*General guides and references for writing code from http://www.w3schools.com/
+
+Specific guides extremely useful for my project:
+http://www.w3schools.com/howto/howto_css_login_form.asp
+http://www.w3schools.com/howto/howto_js_filter_lists.asp
+
+The Noun project icons :
+Home - https://thenounproject.com/search/?q=home+icon&i=16506
+Message - https://thenounproject.com/search/?q=message+icon&i=81870
+Settings - https://thenounproject.com/search/?q=settings+icon&i=530940
+About - https://thenounproject.com/search/?q=standard+question+mark&i=136110
+Search icon - https://thenounproject.com/search/?q=Search+icon&i=16508
+*/
+
+html {
+	font-family: Arial, Helvetica;
+	overflow-x: hidden;
+	background: linear-gradient(to bottom, rgb(52,56,61) , rgb(18,19,22));
+	height: auto;
+	min-height: 100%;
+}
+
+body {
+
+}
+
+.HeaderBar {
+	margin-left: -8px;
+	padding: 6px;
+	width: 102%;
+	height: auto;
+	border-bottom: 2px solid white;
+	background: linear-gradient(to bottom, rgb(52,56,61) , rgb(18,19,22));
+}
+
+.logoImage {
+	float: left;
+	display: inline;
+	margin-left: 2px;
+	margin-bottom: 10px;
+	width: 98%;
+	height: auto;
+}
+
+.Options {
+	clear: left;
+	margin-bottom: 10px;
+	margin-left: 4px;
+	padding: 0px;
+	width: 97%;
+}
+
+.OptionsDiv {
+	font-variant: small-caps;
+	font-weight: 600;
+	color: white;
+	margin: 0px;
+	padding: 6px;
+	text-align: left;
+	height: auto;
+	background: none;
+	transition-property: background;
+	transition-duration: 0.5s;
+}
+
+.OptionsDiv:hover {
+	background: rgb(180,180,180);
+}
+
+#HomeStyle {
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+
+#AboutStyle {
+	background: rgb(255, 66, 97);
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+
+.Icon {
+	float: left;
+	padding-right: 8px;
+	margin-bottom: -8px;
+	width: 20px;
+	height: 20px;
+}
+
+.BackTransition {
+	position: relative;
+	z-index: -1;
+	margin-left: -8px;
+	margin-top: -4px;
+	width: 105%;
+	height: 100px;
+	background: linear-gradient(to bottom, rgb(255, 66, 97), rgb(32,36,41));
+}
+
+.MainContent {
+	color: white;
+	margin-right: 20px;
+}
+
+.Paragraphs {
+	border: 1px solid rgb(235,235,235);
+	margin: auto;
+	padding: 16px;
+	margin-top: 20px;
+}
+
+#Heading {
+	font-variant: small-caps;
+	font-size: 22px;
+	width: 90%;
+	margin: auto;
+	margin-top: -115px;
+	margin-bottom: 80px;
+}
+
+#ContentHeading {
+	font-size: 28px;
+	font-weight: 600;
+}
+
+.PHeading {
+	color: rgb(232,231,209);
+	font-variant: small-caps;
+	font-size: 20px;
+	margin-top: 0px;
+}
+
+a:link    {color:rgb(235,235,235); background-color:transparent; border: none; text-decoration:none}
+a:visited {color:rgb(235,235,235); background-color:transparent; border: none; text-decoration:none}
+a:hover   {color:rgb(235,235,235); background-color:transparent; border: none; text-decoration:none}
+a:active  {color:rgb(235,235,235); background-color:transparent; border: none; text-decoration:none}
+
+@media only screen and (min-width: 348px) {
+
+	.MainContent {
+		margin-left: 20px;
+	}
+
+	.Paragraphs {
+		margin: 0px;
+	}
+
+	#Heading {
+		width: 100%;
+		font-size: 24px;
+		margin-top: -105px;
+	}
+
+}
+
+@media only screen and (min-width: 670px) {
+	.logoImage {
+        width: 363px;
+		height: 146px;
+    }
+
+	.HeaderBar {
+		height: 160px;
+	}
+
+	.Options {
+		margin-top: 0px;
+		margin-left: 40px;
+		clear: none;
+		float: left;
+		width: 200px;
+	}
+
+	.OptionsDiv {
+		text-align: left;
+		padding-left: 8px;
+		width: 200px;
+		background: none;
+		transition-property: width, background;
+		transition-duration: 1s;
+	}
+
+	.OptionsDiv:hover {
+		width: 240px;
+		background: rgb(180,180,180);
+	}
+
+	.MainContent {
+		margin-left: 20px;
+	}
+
+	#Heading {
+		width: 100%;
+		font-size: 32px;
+		margin-top: -120px;
+		margin-bottom: 0px;
+	}
+}

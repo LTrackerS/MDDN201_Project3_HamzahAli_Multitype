@@ -1,0 +1,279 @@
+/*General guides and references for writing code from http://www.w3schools.com/
+
+Specific guides extremely useful for my project:
+http://www.w3schools.com/howto/howto_css_login_form.asp
+http://www.w3schools.com/howto/howto_js_filter_lists.asp
+
+The Noun project icons :
+Home - https://thenounproject.com/search/?q=home+icon&i=16506
+Message - https://thenounproject.com/search/?q=message+icon&i=81870
+Settings - https://thenounproject.com/search/?q=settings+icon&i=530940
+About - https://thenounproject.com/search/?q=standard+question+mark&i=136110
+Search icon - https://thenounproject.com/search/?q=Search+icon&i=16508
+*/
+
+html {
+	font-family: Arial, Helvetica;
+	font-variant: small-caps;
+	font-weight: 600;
+	background: linear-gradient(to bottom, rgb(18,19,22), rgb(42,46,51));
+	height: auto;
+	min-height: 100%;
+}
+
+.homelogoImage {
+	display: block;
+	margin: auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	width: 98%;
+}
+
+#SelectionContainer {
+	margin: auto;
+}
+
+h4 {
+	padding: 20px;
+	margin: 0px;
+}
+
+.Selection1 {
+	font-size: 24px;
+	display: block;
+	margin: auto;
+	text-align: center;
+	color: rgb(50,123,255);
+	background: rgb(18,19,22);
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+	width: 85%;
+	height: 60px;
+	transition-property: width, height, background, color, font-size;
+	transition-duration: 0.5s;
+}
+
+.Selection1:hover {
+	font-size: 28px;
+	background: rgb(50,123,255);
+	position: relative;
+	width: 90%;
+	height: 90px;
+	color: white;
+}
+
+.Selection2 {
+	font-size: 20px;
+	display: block;
+	margin: auto;
+	text-align: center;
+	color: rgb(44,207,194);
+	background: rgb(20,21,24);
+	width: 85%;
+	height: 60px;
+	transition-property: width, height, background, color, font-size;
+	transition-duration: 0.5s;
+}
+
+.Selection2:hover {
+	font-size: 28px;
+	background: rgb(44,207,194);
+	position: relative;
+	width: 90%;
+	height: 90px;
+	color: white;
+}
+
+.Selection3 {
+	font-size: 20px;
+	display: block;
+	margin: auto;
+	text-align: center;
+	color: rgb(228,88,216);
+	background: rgb(22,23,26);
+	width: 85%;
+	height: 60px;
+	transition-property: width, height, background, color, font-size;
+	transition-duration: 0.5s;
+}
+
+.Selection3:hover {
+	font-size: 28px;
+	background: rgb(228,88,216);
+	position: relative;
+	width: 90%;
+	height: 90px;
+	color: white;
+}
+
+.Selection4 {
+	font-size: 20px;
+	display: block;
+	margin: auto;
+	text-align: center;
+	color: rgb(255,66, 97);
+	background: rgb(24,25,28);
+	border-bottom-left-radius: 15px;
+	border-bottom-right-radius: 15px;
+	width: 85%;
+	height: 60px;
+	transition-property: width, height, background, color, font-size;
+	transition-duration: 0.5s;
+}
+
+.Selection4:hover {
+	font-size: 28px;
+	background: rgb(255,66, 97);
+	position: relative;
+	width: 90%;
+	height: 90px;
+	color: white;
+}
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 8px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid white;
+  box-sizing: border-box;
+	color: white;
+	background: rgb(52,56,61);
+}
+
+button {
+  background: rgb(44,207,194);
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+	font-family: Arial, Helvetica;
+	font-variant: small-caps;
+	font-weight: 600;
+	font-size: 22px;
+	transition-property: color, background;
+	transition-duration: 0.5s;
+}
+
+button:hover {
+	color: rgb(44,207,194);
+	background: white;
+}
+
+#SUStyle {
+	background: rgb(228,88,216);
+}
+
+#SUStyle:hover {
+	color: rgb(228,88,216);
+	background: white;
+}
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);
+  padding-top: 60px;
+}
+
+.modal-content {
+  background: linear-gradient(to bottom, rgb(18,19,22), rgb(42,46,51));;
+  margin: 10% auto;
+  border: 1px solid white;
+	border-radius: 10px;
+  width: 80%;
+}
+
+.CloseIcon {
+	margin-right: 10px;
+	float: right;
+  color: rgb(255,66,97);
+  font-size: 35px;
+  font-weight: bold;
+	transition-property: color;
+	transition-duration: 0.5s;
+}
+
+.CloseIcon:hover{
+  color: white;
+  cursor: pointer;
+}
+
+label {
+	color: white;
+}
+
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)}
+  to {-webkit-transform: scale(1)}
+}
+
+@keyframes animatezoom {
+  from {transform: scale(0)}
+  to {transform: scale(1)}
+}
+
+a:link    {color:none; background-color:transparent; border: none; text-decoration:none}
+a:visited {color:none; background-color:transparent; border: none; text-decoration:none}
+a:hover   {color:none; background-color:transparent; border: none; text-decoration:none}
+a:active  {color:none; background-color:transparent; border: none; text-decoration:none}
+
+@media only screen and (min-width: 747px) {
+	.homelogoImage {
+		width: 726px;
+		margin-top: 40px;
+		margin-bottom: 40px;
+	}
+
+	.Selection2, .Selection3, .Selection4 {
+		width: 620px;
+		height: 100px;
+		font-size: 32px;
+	}
+
+	.Selection1 {
+		width: 620px;
+		height: 100px;
+		font-size: 40px;
+	}
+
+	.Selection1:hover {
+		font-size: 48px;
+		width: 660px;
+		height: 120px;
+	}
+
+	.Selection2:hover, .Selection3:hover, .Selection4:hover {
+		font-size: 40px;
+		width: 660px;
+		height: 120px;
+	}
+
+	.modal-content {
+		width: 50%;
+	}
+
+}

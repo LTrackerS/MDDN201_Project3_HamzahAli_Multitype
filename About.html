@@ -1,0 +1,74 @@
+<!-- General guides and references for writing code from http://www.w3schools.com/
+
+Specific guides extremely useful for my project:
+http://www.w3schools.com/howto/howto_css_login_form.asp
+http://www.w3schools.com/howto/howto_js_filter_lists.asp
+
+The Noun project icons :
+Home - https://thenounproject.com/search/?q=home+icon&i=16506
+Message - https://thenounproject.com/search/?q=message+icon&i=81870
+Settings - https://thenounproject.com/search/?q=settings+icon&i=530940
+About - https://thenounproject.com/search/?q=standard+question+mark&i=136110
+Search icon - https://thenounproject.com/search/?q=Search+icon&i=16508-->
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <link rel="stylesheet" href="StyleSheet.css"/>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width">
+    <title>Multitype</title>
+
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class ="HeaderBar">
+
+        <a href="Homepage.html">
+          <img class ="logoImage" src ="images/logo.png" alt="Logo"/>
+        </a>
+
+
+        <div class ="Options">
+            <a href="Homepage.html"><h4 class ="OptionsDiv" id ="HomeStyle"> <img class="Icon" src ="images/homeIcon.png" alt="Icon"/>Homepage</h4></a>
+            <a href="Chat.html"><h4 class ="OptionsDiv" id ="ChatStyle"> <img class="Icon" src ="images/chatIcon.png" alt="Icon"/>Chat</h4></a>
+            <a href="Account.html"><h4 class ="OptionsDiv" id ="AccStyle"> <img class="Icon" src ="images/settingsIcon.png" alt="Icon"/>Account</h4></a>
+            <h4 class ="OptionsDiv" id ="AboutStyle"> <img class="Icon" src ="images/aboutIcon.png" alt="Icon"/>About</h4>
+        </div>
+
+    </div>
+    <div class ="BackTransition"></div>
+    <div>
+        <div class ="MainContent">
+            <div id="Heading"><h2>About Multitype:</h2></div>
+
+            <p id="ContentHeading">Description:</p>
+
+            <div class="Paragraphs">
+                <p class ="PHeading">General:</p>
+                <p>Multitype allows users who speak and type in different languages to have online discussions with each other in a live group chat format. 
+                    A sent message is automatically translated into the specified languages of the chat lobby.  
+                    Every sent and received message will be shown in the original language as well as the translation needed for each languages involved in the chat.</p>
+                <p>This system breaks a barrier of communication between the world and allows masses of people to interact with each other where they would normally never be able to do so. 
+                    ‘Multitype’ keeps users engaged through human interaction and constant learning of many different languages as the main driving force.</p>
+                <p>Multitype is open to whoever feels like using it. Individuals who could benefit the most would be students who are interested in learning other languages,
+                     and users who are thinking of travelling to different areas either for a holiday or relocation.</p>
+                <p class ="PHeading">How it Works:</p>
+                <p>The Chat system functions using two different API’s. The google firebase realtime database API and the Yandex Translate API.</p>
+                <p>Firebase API - <a href ="https://firebase.google.com/">https://firebase.google.com/</a> <br>Yandex.Translate API - <a href="http://translate.yandex.com/">http://translate.yandex.com/</a> </p>
+                <p>The firebase realtime database is used to store all messages being sent from users in the chat lobby. 
+                    From storage inside the database all messages will be held and displayed for users to see while still inside the chat lobby. 
+                    If a user enters a lobby, they will be shown the previous 12 messages stored in the database so they have some context of the conversation that is going on.</p>
+                <p>Before any message is pushed to the firebase realtime database, the message input is taken and translated into each specific language involved in the lobby using Yandex Translate’s API. 
+                    This means that no matter what language the input message is in, the displayed messages will always be in each language of the lobby type.</p>
+                <p class ="PHeading">Help:</p>
+                <p>For any inquires please contact us at ExampleEmail@gmail.com</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

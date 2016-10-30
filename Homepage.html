@@ -1,0 +1,99 @@
+<!-- General guides and references for writing code from http://www.w3schools.com/
+
+Specific guides extremely useful for my project:
+http://www.w3schools.com/howto/howto_css_login_form.asp
+http://www.w3schools.com/howto/howto_js_filter_lists.asp
+
+The Noun project icons :
+Home - https://thenounproject.com/search/?q=home+icon&i=16506
+Message - https://thenounproject.com/search/?q=message+icon&i=81870
+Settings - https://thenounproject.com/search/?q=settings+icon&i=530940
+About - https://thenounproject.com/search/?q=standard+question+mark&i=136110
+Search icon - https://thenounproject.com/search/?q=Search+icon&i=16508-->
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <link rel="stylesheet" href="HomepageStylesheet.css"/>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width">
+    <title>Multitype</title>
+
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3/jquery.min.js"></script>
+</head>
+
+<body>
+
+    <div>
+        <img class ="homelogoImage" src ="images/logo.png" alt="Logo"/>
+    </div>
+
+    <div id ="SelectionContainer">
+        <a href="Chat.html"><div class ="Selection1"><h4 class ="O1">Start Chatting!</h4></div></a>
+        <div class ="Selection2" onclick="document.getElementById('Login').style.display='block'"><h4 class ="O2">Login</h4></div>
+        <div class ="Selection3" onclick="document.getElementById('SignUp').style.display='block'"><h4 class ="O3">Sign Up</h4></div>
+        <a href="About.html"><div class ="Selection4"><h4 class ="O4">About Multitype</h4></div></a>
+    </div>
+
+    <!-- The Login Modal -->
+    <div id="Login" class="modal">
+
+            <!-- Login Modal Content -->
+            <form class="modal-content animate" action="Chat.html">
+                <span onclick="document.getElementById('Login').style.display='none'" class="CloseIcon">&times;</span>
+                <div class="container">
+
+
+                    <label><b>Username</b></label>
+                    <input type="text" placeholder="Enter Username" name="uname" required>
+
+                    <label><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" name="psw" required>
+
+                    <button type="submit">Login</button>
+                </div>
+            </form>
+    </div>
+
+    <!-- The Sign Up Modal -->
+    <div id="SignUp" class="modal">
+
+            <!-- Sign Up Modal Content -->
+            <form class="modal-content animate" action="Account.html">
+                <span onclick="document.getElementById('SignUp').style.display='none'" class="CloseIcon">&times;</span>
+                <div class="container">
+
+
+                    <label><b>Username</b></label>
+                    <input type="text" placeholder="Enter Username" name="uname" required>
+
+                    <label><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" name="psw" required>
+
+                    <button type="submit" id="SUStyle">Sign Up</button>
+                </div>
+            </form>
+    </div>
+
+    <!--Script for allowing modals to close by clicking outside the box-->
+    <script>
+        var modal = document.getElementById('Login');
+        var modal2 = document.getElementById('SignUp');
+
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+
+            if (event.target == modal2) {
+                modal2.style.display = "none";
+            }
+        }
+
+    </script>
+
+</body>
+
+</html>

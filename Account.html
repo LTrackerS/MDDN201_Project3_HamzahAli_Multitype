@@ -1,0 +1,83 @@
+<!-- General guides and references for writing code from http://www.w3schools.com/
+
+Specific guides extremely useful for my project:
+http://www.w3schools.com/howto/howto_css_login_form.asp
+http://www.w3schools.com/howto/howto_js_filter_lists.asp
+
+The Noun project icons :
+Home - https://thenounproject.com/search/?q=home+icon&i=16506
+Message - https://thenounproject.com/search/?q=message+icon&i=81870
+Settings - https://thenounproject.com/search/?q=settings+icon&i=530940
+About - https://thenounproject.com/search/?q=standard+question+mark&i=136110
+Search icon - https://thenounproject.com/search/?q=Search+icon&i=16508-->
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <link rel="stylesheet" href="AccStyleSheet.css"/>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width">
+    <title>Multitype</title>
+
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class ="HeaderBar">
+
+        <a href="Homepage.html">
+        <img class ="logoImage" src ="images/logo.png" alt="Logo"/>
+        </a>
+
+        <div class ="Options">
+            <a href="Homepage.html"><h4 class ="OptionsDiv" id ="HomeStyle"> <img class="Icon" src ="images/homeIcon.png" alt="Icon"/>Homepage</h4></a>
+            <a href="Chat.html"><h4 class ="OptionsDiv" id ="ChatStyle"> <img class="Icon" src ="images/chatIcon.png" alt="Icon"/>Chat</h4></a>
+            <h4 class ="OptionsDiv" id ="AccStyle"> <img class="Icon" src ="images/settingsIcon.png" alt="Icon"/>Account</h4>
+            <a href="About.html"><h4 class ="OptionsDiv" id ="AboutStyle"> <img class="Icon" src ="images/aboutIcon.png" alt="Icon"/>About</h4></a>
+        </div>
+
+    </div>
+    <div class ="BackTransition2"></div>
+    <div>
+        <div class ="MainContent">
+            <div id="Heading"><h2>Account Settings:</h2></div>
+            <div class="Content">
+            <p id="ContentHeading">Change your Settings:</p>
+            <form>
+              <div class="container">
+                <div>
+                  <p>Gender:</p>
+
+                  <input type="radio" name="gender" value="male" class="GenderEntry"> Male<br>
+                  <input type="radio" name="gender" value="female" class="GenderEntry"> Female<br>
+                  <input type="radio" name="gender" value="other" class="GenderEntry"> Other<br><br>
+                </div>
+
+                <div>
+                  <p>Birth Date:</p>
+
+                  <input type="date" placeholder="DD/MM/YYYY" name="birthdate" max="2003-12-31">
+                </div>
+
+                <label><p>Primary Language(s):</p></label>
+                <input type="text" placeholder="Enter Languages" name="Languages">
+
+                <label><p>Link Email Address:</p></label>
+                <input type="email" placeholder="Enter Email Address" name="Email">
+
+                <label><p>Link Facebook Account:</p></label>
+                <input type="text" placeholder="Enter Facebook Email" name="FB">
+                <div class="CheckB">
+                    Allow Tracking?<input type="checkbox" name="track" id="Checkboxbox">
+                </div>
+                <button type="submit" id="SCStyle" onclick="alert('Changes saved!')">Save Changes</button>
+              </div>
+            </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

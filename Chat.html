@@ -1,0 +1,94 @@
+<!-- General guides and references for writing code from http://www.w3schools.com/
+
+Specific guides extremely useful for my project:
+http://www.w3schools.com/howto/howto_css_login_form.asp
+http://www.w3schools.com/howto/howto_js_filter_lists.asp
+
+The Noun project icons :
+Home - https://thenounproject.com/search/?q=home+icon&i=16506
+Message - https://thenounproject.com/search/?q=message+icon&i=81870
+Settings - https://thenounproject.com/search/?q=settings+icon&i=530940
+About - https://thenounproject.com/search/?q=standard+question+mark&i=136110
+Search icon - https://thenounproject.com/search/?q=Search+icon&i=16508
+-->
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <link rel="stylesheet" href="ChatStyleSheet.css"/>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width">
+    <title>Multitype</title>
+
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class ="HeaderBar">
+
+        <a href="index.html">
+          <img class ="logoImage" src ="images/logo.png" alt="Logo"/>
+        </a>
+
+
+        <div class ="Options">
+            <a href="index.html"><h4 class ="OptionsDiv" id ="HomeStyle"> <img class="Icon" src ="images/homeIcon.png" alt="Icon"/>Homepage</h4></a>
+            <h4 class ="OptionsDiv" id ="ChatStyle"> <img class="Icon" src ="images/chatIcon.png" alt="Icon"/>Chat</h4>
+            <a href="Account.html"><h4 class ="OptionsDiv" id ="AccStyle"> <img class="Icon" src ="images/settingsIcon.png" alt="Icon"/>Account</h4></a>
+            <a href="About.html"><h4 class ="OptionsDiv" id ="AboutStyle"> <img class="Icon" src ="images/aboutIcon.png" alt="Icon"/>About</h4></a>
+        </div>
+
+    </div>
+    <div class ="BackTransition"></div>
+    <div>
+        <div class ="MainContent">
+            <div id="Heading"><h2>Chat!</h2></div>
+            <div class="Content">
+              <p id="ContentHeading">Select a Lobby:</p>
+
+              <input type="text" id="SearchInput" onkeyup="myFunction()" placeholder="Search for Lobbies...">
+
+
+              <ul id="myUL">
+                <li><a href="#" class="header">French</a></li>
+                <li><a href="chat3.html"><p class="PLang">L'endroit heureux</p><br>The Happy Place</a></li>
+                <li><a href="chat3.html"><p class="PLang">Farming Canard</p><br>Duck Farming</a></li>
+
+                <li><a href="#" class="header">Japanese</a></li>
+                <li><a href="chat3.html"><p class="PLang">技術フリークス</p><br>Technology Freaks</a></li>
+                <li><a href="chat3.html"><p class="PLang">ゲームチャンネル</p><br>Gaming Channels</a></li>
+
+                <li><a href="#" class="header">Russian</a></li>
+                <li><a href="chat3.html"><p class="PLang">собачьи бега</p><br>Dog Racing</a></li>
+                <li><a href="chat3.html"><p class="PLang">Зимняя охота</p><br>Winter Hunting</a></li>
+              </ul>
+            </div>
+        </div>
+    </div>
+
+    <!--Script for filtering list options by characters-->
+    <script>
+    function myFunction() {
+        var input, filter, ul, li, a, i;
+        input = document.getElementById("SearchInput");
+        filter = input.value.toUpperCase();
+        ul = document.getElementById("myUL");
+        li = ul.getElementsByTagName("li");
+
+        for (i = 0; i < li.length; i++) {
+            a = li[i].getElementsByTagName("a")[0];
+            if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+                li[i].style.display = "";
+            } else {
+                li[i].style.display = "none";
+
+            }
+        }
+    }
+    </script>
+
+</body>
+
+</html>

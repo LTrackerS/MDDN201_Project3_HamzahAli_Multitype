@@ -1,0 +1,467 @@
+/*General guides and references for writing code from http://www.w3schools.com/
+
+Specific guides extremely useful for my project:
+http://www.w3schools.com/howto/howto_css_login_form.asp
+http://www.w3schools.com/howto/howto_js_filter_lists.asp
+
+The Noun project icons :
+Home - https://thenounproject.com/search/?q=home+icon&i=16506
+Message - https://thenounproject.com/search/?q=message+icon&i=81870
+Settings - https://thenounproject.com/search/?q=settings+icon&i=530940
+About - https://thenounproject.com/search/?q=standard+question+mark&i=136110
+Search icon - https://thenounproject.com/search/?q=Search+icon&i=16508
+*/
+
+html {
+	font-family: Arial, Helvetica;
+	overflow-x: hidden;
+	background: linear-gradient(to bottom, rgb(52,56,61) , rgb(18,19,22));
+	height: auto;
+	min-height: 100%;
+}
+
+
+.HeaderBar {
+	margin-left: -8px;
+	padding: 6px;
+	width: 102%;
+	height: auto;
+	border-bottom: 2px solid white;
+	background: linear-gradient(to bottom, rgb(52,56,61) , rgb(18,19,22));
+}
+
+.logoImage {
+	float: left;
+	display: inline;
+	margin-left: 2px;
+	margin-bottom: 10px;
+	width: 98%;
+	height: auto;
+}
+
+.Options {
+	clear: left;
+	margin-bottom: 10px;
+	margin-left: 4px;
+	padding: 0px;
+	width: 97%;
+}
+
+.OptionsDiv {
+	font-variant: small-caps;
+	font-weight: 600;
+	color: white;
+	margin: 0px;
+	padding: 6px;
+	text-align: left;
+	height: auto;
+	background: none;
+	transition-property: background;
+	transition-duration: 0.5s;
+}
+
+.OptionsDiv:hover {
+	background: rgb(180,180,180);
+}
+
+#HomeStyle {
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+
+#ChatStyle {
+	background: rgb(50,123,255);
+}
+
+#AboutStyle {
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+
+.Icon {
+	float: left;
+	padding-right: 8px;
+	margin-bottom: -8px;
+	width: 20px;
+	height: 20px;
+}
+
+.BackTransition {
+	position: relative;
+	z-index: -1;
+	margin-left: -8px;
+	margin-top: -4px;
+	width: 105%;
+	height: 100px;
+	background: linear-gradient(to bottom, rgb(50,123,255), rgb(32,36,41));
+}
+
+.PLang {
+	font-variant: small-caps;
+	font-size: 28px;
+	font-weight: 600;
+	margin: 0px;
+	padding: 0px;
+}
+
+
+#ContentHeading {
+	font-size: 28px;
+	font-weight: 600;
+}
+
+#SearchInput {
+	display: block;
+	color: white;
+	background: rgb(52,56,61);
+	background-image: url("images/searchIcon.png");
+	background-position: 10px 12px;
+	background-repeat: no-repeat;
+	font-size: 16px;
+	padding: 12px;
+	padding-left: 40px;
+	border: 1px solid rgb(235,235,235);
+	margin-bottom: 12px;
+	margin-right: 16px;
+}
+
+#myUL {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	margin-right: 16px;
+}
+
+#myUL li a {
+	border: 1px solid rgb(235,235,235);
+	margin-top: -1px;
+	background: rgb(74,80,88);
+	padding: 12px;
+	text-decoration: none;
+	font-size: 18px;
+	color: rgb(235,235,235);
+	display: block;
+	transition-property: color, background;
+	transition-duration: 0.5s;
+}
+
+#myUL li a.header {
+	font-variant: small-caps;
+	color: rgb(80,183,255);
+	background: rgb(25,27,30);
+}
+
+#myUL li a:hover:not(.header) {
+	color: rgb(232,231,209);
+	background: rgb(104,110,118);
+}
+
+.MainContent {
+	color: white;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+.Paragraphs {
+	width: 90%;
+	margin: 0px;
+}
+
+#Heading {
+	font-variant: small-caps;
+	font-size: 24px;
+	width: 90%;
+	margin: auto;
+	margin-top: -115px;
+	margin-bottom: 80px;
+}
+
+#ChatContanier{
+	padding-bottom: 25px;
+	background: rgb(25,27,30);
+	width: 98%;
+	border:1px solid rgb(235,235,235);
+	overflow-x: hidden;
+}
+
+#ChatHeader {
+	padding: 20px;
+}
+
+.welcome {
+	margin: 0px;
+	font-family: Arial, Helvetica;
+	font-variant: small-caps;
+	font-weight: 600;
+	font-size: 22px;
+	float:left;
+}
+
+#exitChat{
+	background: rgb(255,36,57);
+	color: white;
+	font-family: Arial, Helvetica;
+	font-variant: small-caps;
+	font-weight: 600;
+	font-size: 18px;
+	float: right;
+	padding: 5px;
+	margin-bottom: -1px;
+	width: 120px;
+	border: 1px solid rgb(235,235,235);
+	cursor: pointer;
+	transition-property: background, color, font-size;
+	transition-duration: 0.5s;
+}
+
+#exitChat:hover {
+	font-size: 20px;
+	background: white;
+	color: rgb(255,36,57);
+}
+
+#chatbox {
+	text-align:left;
+	margin-left: 20px;
+	margin-bottom:25px;
+	padding:10px;
+	background: rgb(40,43,48);
+	height:350px;
+	width:100%;
+	border:1px solid rgb(235,235,235);
+	overflow:auto;
+ }
+
+.chatForm {
+	padding-left: 20px;
+}
+
+#typeMessage {
+	color: white;
+	background: rgb(74,80,88);
+	padding: 5px;
+	width:40%;
+	height: 28px;
+	border:1px solid rgb(235,235,235);
+}
+
+#submitButton {
+	background: rgb(50,123,255);
+	color: white;
+	font-family: Arial, Helvetica;
+	font-variant: small-caps;
+	font-weight: 600;
+	font-size: 22px;
+	float: right;
+	margin-right: 20px;
+	padding: 5px;
+	width: 100px;
+	border: 1px solid rgb(235,235,235);
+	cursor: pointer;
+	transition-property: background, color;
+	transition-duration: 0.5s;
+}
+
+#submitButton:hover {
+	background: white;
+	color: rgb(50,123,255);
+}
+
+.msgln {
+	margin: 0px;
+}
+
+a:link    {color:rgb(235,235,235); background-color:transparent; border: none; text-decoration:none}
+a:visited {color:rgb(235,235,235); background-color:transparent; border: none; text-decoration:none}
+a:hover   {color:rgb(235,235,235); background-color:transparent; border: none; text-decoration:none}
+a:active  {color:rgb(235,235,235); background-color:transparent; border: none; text-decoration:none}
+
+/*Styling for Chat*/
+
+#sign-out, #sign-in, #image-form {
+	display: none;
+}
+
+/*
+.Layer1 {
+	padding: 4px;
+	border: 2px solid black;
+}*/
+
+.Layer2 {
+	padding: 4px;
+	padding-bottom: 0px;
+	border: 2px solid rgb(80,183,255);
+	background: linear-gradient(to bottom, rgb(18,19,22), rgb(52,56,61));
+}
+
+.Layer3 {
+	padding-top: 8px;
+	padding-bottom: 8px;
+	border-top: 3px solid rgb(50,153,255);
+}
+
+.Layer4 {
+	padding: 4px;
+	padding-left: 8px;
+	border: 1px solid rgb(235,235,235);
+	font-size: 16px;
+	color: rgb(235,235,235);
+	background: rgb(18,19,22);
+	width: 50%;
+	height: 30px;
+}
+
+.Layer6 {
+	padding: 4px;
+	width: 40%;
+	height: 40px;
+	float: right;
+	font-size: 19px;
+	font-weight: bold;
+	font-variant: small-caps;
+	border: 1px solid white;
+	color: rgb(80,183,255);
+	background: rgb(25,27,30);
+	transition-property: color, background;
+	transition-duration: 0.5s;
+}
+
+.Layer6:hover {
+	color: rgb(232,231,209);
+	background: rgb(80,183,255);
+}
+
+#message-form {
+	display: inline;
+}
+
+#messages {
+	max-height: 498px;
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+
+.message {
+	color: rgb(235,235,235);
+	font-size: 18px;
+	padding-top: 5px;
+	padding-left: 10px;
+}
+
+.name {
+	color: rgb(232,231,209);
+	font-style: italic;
+	font-variant: small-caps;
+	padding-top: 5px;
+	padding-left: 10px;
+}
+
+.message-container {
+	border-top: 1px solid rgb(80,183,255);
+	border-bottom: 1px solid rgb(232,231,209);
+	transition-property: background;
+	transition-duration: 0.5s;
+}
+
+.message-container:hover {
+	background: rgb(30,143,225);
+}
+
+#Translated {
+	display: none;
+}
+
+.YandexRights {
+	float: right;
+	margin-top: 8px;
+	color: rgb(235,235,235);
+	font-size: 18px;
+}
+
+
+@media only screen and (min-width: 348px) {
+
+	.MainContent {
+		margin-left: 20px;
+	}
+
+	.Paragraphs {
+		margin: 0px;
+	}
+
+	#Heading {
+		width: 100%;
+		font-size: 24px;
+		margin-top: -105px;
+	}
+
+	.Layer6 {
+		width: 120px;
+	}
+}
+
+@media only screen and (min-width: 670px) {
+	.logoImage {
+		width: 363px;
+		height: 146px;
+    }
+
+	.HeaderBar {
+		height: 160px;
+	}
+
+	.Options {
+		margin-top: 0px;
+		margin-left: 40px;
+		clear: none;
+		float: left;
+		width: 200px;
+	}
+
+	.OptionsDiv {
+		text-align: left;
+		padding-left: 8px;
+		width: 200px;
+		background: none;
+		transition-property: width, background;
+		transition-duration: 1s;
+	}
+
+	.OptionsDiv:hover {
+		width: 240px;
+		background: rgb(180,180,180);
+	}
+
+	.MainContent {
+		margin-left: 20px;
+	}
+
+	#Heading {
+		width: 100%;
+		font-size: 32px;
+		margin-top: -120px;
+		margin-bottom: 0px;
+	}
+
+	#SearchInput {
+		width: 50%;
+	}
+
+	#typeMessage {
+		width: 60%;
+	}
+
+	.welcome {
+		font-size: 26px;
+	}
+
+	#exitChat{
+		font-size: 22px;
+		width: 160px;
+	}
+
+	#exitChat:hover {
+		font-size: 26px;
+	}
+}

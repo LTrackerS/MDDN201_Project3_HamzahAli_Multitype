@@ -1,0 +1,75 @@
+<!-- General guides and references for writing code from http://www.w3schools.com/
+
+Specific guides extremely useful for my project:
+http://www.w3schools.com/howto/howto_css_login_form.asp
+http://www.w3schools.com/howto/howto_js_filter_lists.asp
+
+The Noun project icons :
+Home - https://thenounproject.com/search/?q=home+icon&i=16506
+Message - https://thenounproject.com/search/?q=message+icon&i=81870
+Settings - https://thenounproject.com/search/?q=settings+icon&i=530940
+About - https://thenounproject.com/search/?q=standard+question+mark&i=136110
+Search icon - https://thenounproject.com/search/?q=Search+icon&i=16508
+-->
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <link rel="stylesheet" href="ChatStyleSheet.css"/>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width">
+    <title>Multitype</title>
+
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class ="HeaderBar">
+
+        <a href="index.html">
+          <img class ="logoImage" src ="images/logo.png" alt="Logo"/>
+        </a>
+
+
+        <div class ="Options">
+            <a href="index.html"><h4 class ="OptionsDiv" id ="HomeStyle"> <img class="Icon" src ="images/homeIcon.png" alt="Icon"/>Homepage</h4></a>
+            <a href="Chat.html"><h4 class ="OptionsDiv" id ="ChatStyle"> <img class="Icon" src ="images/chatIcon.png" alt="Icon"/>Chat</h4></a>
+            <a href="Account.html"><h4 class ="OptionsDiv" id ="AccStyle"> <img class="Icon" src ="images/settingsIcon.png" alt="Icon"/>Account</h4></a>
+            <a href="About.html"><h4 class ="OptionsDiv" id ="AboutStyle"> <img class="Icon" src ="images/aboutIcon.png" alt="Icon"/>About</h4></a>
+        </div>
+
+    </div>
+    <div class ="BackTransition"></div>
+    <div>
+        <div class ="MainContent">
+            <div id="Heading"><h2>Chat!</h2></div>
+            <div class="Content">
+              <p id="ContentHeading">Chat Room:</p>
+
+                <div id="ChatContanier">
+                  <div id="ChatHeader">
+                      <p class="welcome">Welcome!</p>
+                      <form action="Chat.html">
+                        <button id="exitChat">Exit Chat</button>
+                      </form>
+                  </div>
+
+                  <div id="chatbox"></div>
+
+                  <form name="message" action="" class="chatForm">
+                      <input type="text" id="typeMessage" placeholder="Type Message here..."/>
+                      <button type="submit" id="submitButton">Send</button>
+                  </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>
